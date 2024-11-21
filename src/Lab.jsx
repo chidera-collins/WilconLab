@@ -12,6 +12,7 @@ import FAQComponent from './UI/FAQComponent/FAQComponent'
 import CheckoutComponent from './UI/CheckoutComponent/CheckoutComponent'
 import PricingComponent from './UI/PricingComponent/PricingComponent'
 import CartComponent from "./UI/CartComponent/CartComponent";
+import FooterComponent from "./ConstantComponent/FooterComponent/FooterComponent";
 
 function Lab() {
     return (
@@ -31,6 +32,7 @@ function Lab() {
                     <Route path="/Checkout" element={<CheckoutComponent />} />
                     <Route path="/Pricing" element={<PricingComponent />} />
                 </Routes>
+                <FooterComponent/>
             </BrowserRouter>
         </CartProvider>
     );

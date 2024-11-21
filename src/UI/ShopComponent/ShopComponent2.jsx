@@ -10,6 +10,8 @@ function ShopComponent2({ data = [] }) {
     const [options, setOptions] = useState('new');
     const [currentPage, setCurrentPage] = useState(1);
     const productsPerPage = 12;
+    const [showAlert, setShowAlert] = useState(false); // State to handle alert visibility
+    const [alertMessage, setAlertMessage] = useState(''); 
 
     if (options === 'rating') {
         allData.sort((a, b) => (parseFloat(b.rating) || 0) - (parseFloat(a.rating) || 0));
@@ -29,9 +31,44 @@ function ShopComponent2({ data = [] }) {
             setCurrentPage(page);
         }
     };
+    const handleAddToCart = (item) => {
+        addToCart(item, (addedItem) => {
+            setAlertMessage(`${addedItem.id} has been added to the cart!`);
+            setShowAlert(true);
+    
+            // Hide the alert after 3 seconds
+            setTimeout(() => {
+                setShowAlert(false);
+            }, 3000);
+        });
+    };
+
+    
+    
 
     return (
         <div>
+             {showAlert && (
+                <div
+                    role="alert"
+                    className="alert alert-success fixed top-[50px] right-4 flex items-center space-x-2 p-3 bg-green-500 text-white rounded-md shadow-lg z-50"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-6 w-6 shrink-0 stroke-current"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                    </svg>
+                    <span>{alertMessage}</span>
+                </div>
+            )}
             <div className="md:flex p-[20px] md:p-[30px] items-center justify-between">
                 <div>
                     <h1>Showing {firstIndex + 1}-{lastIndex} of {data.length}</h1>
@@ -60,10 +97,11 @@ function ShopComponent2({ data = [] }) {
                                 className="relative group-hover:scale-110 transition-transform duration-300 ease-in-out"
                             />
                         </figure>
-                        <div className="flex invisible group-hover:visible transition-transform duration-[10s] ease-in-out justify-center gap-3 absolute left-[30%] bottom-[25%] group-hover:bottom-[35%]">
+                        <div  className="flex invisible group-hover:visible transition-transform duration-[10s] ease-in-out justify-center gap-3 absolute left-[30%] bottom-[25%] group-hover:bottom-[35%]">
                             <div
+                                role='alert'
                                 className="h-[30px] w-[30px] flex items-center justify-center rounded-[50%] cursor-pointer group-hover:bg-textc"
-                                onClick={() => {addToCart(item);alert("added to cart")}}
+                                onClick={() => {handleAddToCart(item)}}
                             >
                                 <FaCartShopping className="text-[1.4rem] text-white rounded-xl hover:bg-boldtext" />
                             </div>
@@ -71,12 +109,25 @@ function ShopComponent2({ data = [] }) {
                                 <FaEye className="text-[1.4rem] text-white rounded-xl hover:bg-boldtext" />
                             </div>
                             <div className="h-[30px] w-[30px] flex items-center justify-center rounded-[50%] group-hover:bg-textc cursor-pointer">
-                                <MdFavoriteBorder className="text-[1.4rem] text-white rounded-xl hover:bg-boldtext" />
+                                <MdFavoriteBorder 
+                                className="text-[1.4rem] text-white rounded-xl hover:bg-boldtext" />
                             </div>
                         </div>
                         <div className="card-body items-center text-center">
                             <h2 className="card-title uppercase">{item.id}</h2>
-                            <span>{item.rating}</span>
+                            <div className='rating'>
+                                {Array.from({length:5}).map((_,i)=>(
+                                    <input
+                                        key={i}
+                                        type='radio'
+                                        name={`rating-${item.id}`}
+                                        className={`mask mask-star-2 ${i < parseInt(item.rating || 0) ? 'bg-orange-400' : 'bg-orange-300'}`}
+                                        checked={i < parseInt(item.rating || 0)} 
+                                        readOnly
+                                    />
+                                ))}
+
+                            </div>
                             <h2>${item.price}</h2>
                         </div>
                     </div>

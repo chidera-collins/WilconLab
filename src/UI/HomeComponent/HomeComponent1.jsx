@@ -20,7 +20,7 @@ function HomeComponent1() {
     
   return (
     <div>
-        <div className='min-h-[600px]   grid grid-cols-1 lg:grid-cols-2 p-3 lg:gap-20 items-center'>
+        <div className='min-h-[600px] p-[20px]  grid grid-cols-1 lg:grid-cols-2 lg:gap-20 items-center'>
             <div className=' lg:hidden'>
                 <div className='min-h-[100px] w-[320px] '>
                  <img src={images[num]} alt="" />

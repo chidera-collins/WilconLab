@@ -7,9 +7,9 @@
   margin: 0;
   padding:0;
 }
-/* body{
+body{
   overflow-x: hidden;
-} */
+}
 .john{
   /* top: 400px; */
   visibility: hidden;

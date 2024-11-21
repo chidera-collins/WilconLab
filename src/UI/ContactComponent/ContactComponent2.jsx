@@ -58,7 +58,7 @@ function ContactComponent2() {
             </div>
             <div className='p-[10px] md:p-0'>
                 <form action="">
-                    <h1>Send us a Message:</h1>
+                    <h1  className='font-custom font-bold text-boldtext  text-[1.2rem]  mt-4'>Send us a Message:</h1>
                     <input type="text" placeholder='  Enter your Name' className='h-[40px] w-full md:w-[90%] lg:w-[40%] mt-10 active:outline-blue-700 hover:outline-blue-700'required />
                     <input type="text" placeholder='  Enter your number ' className='h-[40px] w-full md:w-[90%] mt-8 lg:w-[40%] lg:ml-10 md:mt-8 lg:mt-10 active:outline-blue-700 hover:outline-blue-700'required />
                     <input type="number" placeholder='  Enter your number ' className='h-[40px] w-full md:w-[90%] mt-8 lg:w-[40%] md:mt-8 lg:mt-10 active:outline-blue-700 hover:outline-blue-700' required />

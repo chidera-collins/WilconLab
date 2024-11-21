@@ -175,7 +175,7 @@ export default function HomeComponent7() {
                             <div>
                                 <Button
                                 type ='submit'
-                                className ='btn btn-success bg-boldtext text-bodybg w-[200px]'
+                                className ='btn  bg-textc hover:bg-textc text-bodybg w-[200px]'
                                 label = 'BOOK NOW'
                                 // onClick={()=>alert('Your Details has Been Submitted')}
                                 
@@ -212,7 +212,7 @@ export default function HomeComponent7() {
                             <div>
                                 <Button
                                 type ='submit'
-                                className ='btn btn-success bg-boldtext text-bodybg w-[200px]'
+                                className ='btn hover:bg-textc hover:opacity-60 bg-textc text-bodybg w-[200px]'
                                 label = 'BOOK NOW'
                                 // onClick={()=>alert('Your Details has Been Submitted')}
                                 

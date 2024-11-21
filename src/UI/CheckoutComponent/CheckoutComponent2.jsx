@@ -1,5 +1,6 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom'
+import Button from '../../ReusableComponent/Button';
 
 function CheckoutComponent2() {
     const location = useLocation();
@@ -10,7 +11,7 @@ function CheckoutComponent2() {
     <div>
         <div>
             <form action="">
-                <div className='min-h-[100px] w-full bg-red-200 grid grid-cols-1 lg:grid-cols-2 p-[10px] font-custom'>
+                <div className='min-h-[100px] lg:translate-x-20   lg:w-[90%] bg-bodybg grid gap-4 grid-cols-1 lg:grid-cols-2 p-[20px] lg:justify-center font-custom lg:p-[30px]'>
                     <div>
                     <div>
                         <h1 className='text-boldtext text-[1.3rem] font-bold'>Billing address</h1>
@@ -26,7 +27,7 @@ function CheckoutComponent2() {
                             <option>united kingdom</option>
                             </select>
                             <div className="flex flex-col md:flex md:flex-row justify-between mt-4">
-                                {/* First Name */}
+
                                 <div className="md:w-[48%]">
                                     <label htmlFor="firstName" className="block mb-1 font-semibold">
                                         First Name <span className='text-[red]'>*</span>
@@ -40,7 +41,6 @@ function CheckoutComponent2() {
                                     />
                                 </div>
 
-                                {/* Last Name */}
                                 <div className="md:w-[48%]">
                                     <label htmlFor="lastName" className="block mb-1 font-semibold">
                                         Last Name <span className='text-[red]'>*</span>
@@ -59,10 +59,8 @@ function CheckoutComponent2() {
                                 <input
                                         type="text"
                                         id="company name"
-                                        // placeholder="Type here"
                                         className="input input-bordered input-sm w-full"
-                                        // required
-                                    />
+                                />
                                 <label htmlFor="lastName" className="block mt-1 font-semibold">
                                         Address <span className='text-[red]'>*</span>
                                 </label>
@@ -139,28 +137,38 @@ function CheckoutComponent2() {
                             </div>
                     </div>
                 </div>
-                        
-                    <div className="mt-4 p-4 border border-gray-300 rounded-lg">
+
+                <div>
                     <div>
-                            your order
-                        </div>
-                    {/* Product Details */}
-                    <div className="flex justify-between font-semibold border-b pb-2">
-                    <span>Product</span>
-                    <span>Total</span>
+                        <h1 className='text-boldtext text-[1.3rem] font-bold'>Your order</h1>
                     </div>
-                    {cart.map((item,index) => (
-                       <div key={index} className="flex justify-between py-2">
-                       <span>{item.id} x {item.quantity}</span>
-                       <span>${(item.price * item.quantity).toFixed(2)}</span>
-                     </div>
-                    ))}
-                    {/* Total */}
-                    <div className="flex justify-between font-bold mt-4 border-t pt-2">
-                    <span>Total</span>
-                    <span>${cartTotal.toFixed(2)}</span>
+                    <div className="mt-2 p-4 border border-gray-300 rounded-lg">
+                        {/* Product Details */}
+                        <div className="flex justify-between font-semibold border-b pb-2">
+                            <span>Product</span>
+                            <span>Total</span>
+                        </div>
+                        {cart.map((item,index) => (
+                            <div key={index} className="flex justify-between py-2">
+                                <span>{item.id} x {item.quantity}</span>
+                                <span>${(item.price * item.quantity).toFixed(2)}</span>
+                            </div>
+                        ))}
+                        {/* Total */}
+                        <div className="flex justify-between font-bold mt-4 border-t pt-2">
+                            <span>Total</span>
+                            <span>${cartTotal.toFixed(2)}</span>
+                        </div>
+                    </div>
+                    <div>
+                        <Button
+                            className='btn  uppercase mt-4 w-[60%] font-custom text-[1rem] font-bold text-bodybg bg-textc hover:bg-textc hover:opacity-70'
+                            label='place order'
+                        />
                     </div>
                 </div>
+                        
+               
 
             </div>
             </form>

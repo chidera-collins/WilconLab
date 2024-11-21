@@ -9,7 +9,7 @@ import { FaPinterest } from "react-icons/fa6";
 function TeamComponent2() {
   return (
     <div>
-        <div  className='min-h-[200px]  w-full bg-white grid grid-cols-1   gap-5  md:grid-cols-2 lg:grid-cols-3 p-[10px]'>
+        <div  className='min-h-[200px]  w-full bg-white grid grid-cols-1 lg:p-[30px]  gap-5  md:grid-cols-2 lg:grid-cols-3 p-[10px]'>
             <div>
                 <img src={team2} width='100%' height='100%' alt="" />
             </div>

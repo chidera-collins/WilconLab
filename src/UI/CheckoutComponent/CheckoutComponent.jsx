@@ -4,7 +4,7 @@ import CheckoutComponent2 from './CheckoutComponent2'
 
 function CheckoutComponent() {
   return (
-    <div className='mt-[110px]'>
+    <div className='mt-[110px] bg-bodybg'>
       <CheckoutComponent1/>
       <CheckoutComponent2/>
     </div>

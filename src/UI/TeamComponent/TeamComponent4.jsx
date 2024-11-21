@@ -4,7 +4,7 @@ import { MdDone } from "react-icons/md";
 function TeamComponent4() {
   return (
     <div>
-        <div className='min-h-[100px] bg grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 p-[10px]'>
+        <div className='min-h-[100px] bg grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 p-[10px] lg:p-[50px]'>
             <div>
                 <div className='p-[10px] box-border'>
                     <h1 className='text-[1.7rem] font-custom text-boldtext font-semibold'>Skills</h1>

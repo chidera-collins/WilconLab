@@ -10,7 +10,7 @@ function CartComponent2() {
     const cartTotal = cart.reduce((total, item) => total + item.price * item.quantity, 0);
 
   return (
-    <div className=' p-[10px]'>
+    <div className=' p-[10px] lg:p-[20px]'>
     {cart.length === 0 ? (
         <p>Your cart is empty</p>
     ) : (

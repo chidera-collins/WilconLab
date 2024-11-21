@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 function HomeComponent2() {
   return (
     <div>
-        <div className='min-h-[600px] bg-bodybg  grid grid-cols-1 lg:grid-cols-2 '>
+        <div className='min-h-[600px] bg-bodybg  p-[20px]  grid grid-cols-1 lg:grid-cols-2 '>
            <div className='relative'>
                 <div className='min-h-[100px] W-[100px]'>
                    <img src={about} alt="" />

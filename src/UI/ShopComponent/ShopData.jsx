@@ -16,13 +16,7 @@ import ShopComponent2 from './ShopComponent2'
 
 function ShopData() {
 
-    // const [products, setProducts] = useState(data);
 
-    // const handleRatingChange = (index, rating) => {
-    //     const updatedProducts = [...products];
-    //     updatedProducts[index].rating = rating;
-    //     setProducts(updatedProducts);
-    // };
     const data =[
         {
             id:'Glucose monitoring',
