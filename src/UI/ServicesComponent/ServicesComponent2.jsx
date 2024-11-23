@@ -5,6 +5,8 @@ import { GiCorkedTube } from "react-icons/gi";
 import { FaLungs } from "react-icons/fa";
 import { FaBacterium } from "react-icons/fa";
 import { LuDna } from "react-icons/lu";
+import {motion} from "motion/react"
+
 
 function ServicesComponent2() {
   return (
@@ -15,7 +17,12 @@ function ServicesComponent2() {
                 <h1 className='capitalize font-custom text-[1.9rem] font-extrabold text-boldtext'>service area</h1>
             </div>
             <div className='min-h-[700px]  grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-6 w-full p-[20px]'>
-              <div  className='p-[30px] box-border group bg-white'>
+              <motion.div
+              initial={{ opacity:0, y:30 }}
+              whileInView={{ opacity: 1, y:0 }}
+              transition={{delay:0.4,type:'spring', stiffness:120, duration:2}}
+              viewport={{ once: true }}  
+              className='p-[30px] box-border group bg-white'>
                 <div className='min-h-[100px] w-[30%] translate-x-[40px]   '>
                     <div className='relative  bg-red-600 hexagon group-hover:bg-[blue] b group-hover:transition duration-700 ease-in-out '> 
                       <div className='absolute left-[10px]  mt-[30px] h-[10px] z-[5] text-6xl text-[#4d4d84] group-hover:text-bodybg group-hover:"transition duration-700 ease-in-out '>
@@ -35,8 +42,13 @@ function ServicesComponent2() {
                         </a>
                     </div>
                  </div>
-              </div>
-              <div  className='p-[30px] box-border bg-white group'>
+              </motion.div>
+              <motion.div  
+              initial={{ opacity:0, y:30 }}
+              whileInView={{ opacity: 1, y:0 }}
+              transition={{delay:0.5,type:'spring', stiffness:120, duration:2}}
+              viewport={{ once: true }}
+              className='p-[30px] box-border bg-white group'>
                 <div className='min-h-[100px] w-[30%] translate-x-[40px]  '>
                   <div className='relative  hexagon group-hover:bg-[#e64040] group-hover:transition duration-700 ease-in-out'>                         
                     <div className='absolute left-[10px] mt-[30px] h-[10px] z-[5] text-6xl text-[red] group-hover:text-bodybg group-hover:"transition duration-700 ease-in-out  '>
@@ -56,8 +68,13 @@ function ServicesComponent2() {
                         </a>
                     </div>
                  </div>
-              </div>
-              <div className='p-[30px] box-border bg-white group'>    
+              </motion.div>
+              <motion.div 
+              initial={{ opacity:0, y:30 }}
+              whileInView={{ opacity: 1, y:0 }}
+              transition={{delay:0.6,type:'spring', stiffness:120, duration:2}}
+              viewport={{ once: true }}
+              className='p-[30px] box-border bg-white group'>    
                 <div className='min-h-[100px] w-[30%] translate-x-[40px] '>
                     <div className='relative hexagon  hexagon group-hover:bg-[#2b2b9d] group-hover:transition duration-700 ease-in-out '>                         
                         <div className='absolute left-[10px] mt-[30px] h-[10px] z-[5] text-6xl text-[blue] group-hover:text-bodybg group-hover:"transition duration-700 ease-in-out '>
@@ -77,8 +94,13 @@ function ServicesComponent2() {
                         </a>
                     </div>
                  </div>
-              </div>
-              <div className='p-[30px] box-border bg-white group'>
+              </motion.div>
+              <motion.div 
+              initial={{ opacity:0, y:30 }}
+              whileInView={{ opacity: 1, y:0 }}
+              transition={{delay:0.4,type:'spring', stiffness:120, duration:2}}
+              viewport={{ once: true }}
+              className='p-[30px] box-border bg-white group'>
                 <div className='min-h-[100px] w-[30%] translate-x-[40px] '>
                   <div className='relative hexagon group-hover:bg-[#9ee09e] group-hover:transition duration-700 ease-in-out'>                         
                     <div className='absolute left-[10px] mt-[30px] h-[10px] z-[5] text-6xl text-[green] group-hover:text-bodybg group-hover:"transition duration-700 ease-in-out '>
@@ -98,8 +120,13 @@ function ServicesComponent2() {
                         </a>
                     </div>
                  </div>
-              </div>
-              <div className='p-[30px] bg-white box-border  group'>
+              </motion.div>
+              <motion.div 
+              initial={{ opacity:0, y:30 }}
+              whileInView={{ opacity: 1, y:0 }}
+              transition={{delay:0.5,type:'spring', stiffness:120, duration:2}}
+              viewport={{ once: true }}
+              className='p-[30px] bg-white box-border  group'>
                 <div className='min-h-[100px] w-[30%] translate-x-[40px]'>
                   <div className='relative hexagon group-hover:bg-[#9ee09e] group-hover:transition duration-700 ease-in-out'>                         
                     <div className='absolute left-[10px] mt-[30px] min-h-[10px] z-[5]  text-6xl text-[green] group-hover:text-bodybg group-hover:"transition duration-700 ease-in-out  '>
@@ -119,8 +146,13 @@ function ServicesComponent2() {
                         </a>
                     </div>
                  </div>
-              </div>
-              <div  className='p-[30px] box-border group bg-white'>
+              </motion.div>
+              <motion.div  
+              initial={{ opacity:0, y:30 }}
+              whileInView={{ opacity: 1, y:0 }}
+              transition={{delay:0.6,type:'spring', stiffness:120, duration:2}}
+              viewport={{ once: true }}
+              className='p-[30px] box-border group bg-white'>
                 <div className='min-h-[100px] w-[30%] translate-x-[40px]   '>
                   <div className='relative  bg-red-600 hexagon group-hover:bg-[#272771] group-hover:transition duration-700 ease-in'>                         
                     <div className='absolute left-[10px] mt-[30px] h-[10px] z-[5] text-6xl text-[#29296c] group-hover:text-bodybg group-hover:"transition duration-700 ease-in-out  '>
@@ -140,7 +172,7 @@ function ServicesComponent2() {
                         </a>
                     </div>
                  </div>
-              </div>
+              </motion.div>
           
             </div>
 

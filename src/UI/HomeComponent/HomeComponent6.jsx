@@ -1,4 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
+import {motion} from "motion/react"
+
 
 function HomeComponent6() {
 
@@ -65,7 +67,12 @@ function HomeComponent6() {
   return (
     <div>
         <div className='min-h-[600px] md:min-h-[500px] lg:min-h-[300px] mt-[50px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-around gap-5 p-[10px] box-border' ref={sectionRef}>
-            <div className=' p-[20px] hover:border-[2px] hover:border-[blue] transition delay-75 duration-75 rounded lg'>
+            <motion.div 
+              initial={{ opacity:0, y:30 }}
+              whileInView={{ opacity: 1, y:0 }}
+              transition={{delay:0.4,type:'spring', stiffness:120}}
+              viewport={{ once: true }}
+            className=' p-[20px] hover:border-[2px] hover:border-[blue] transition delay-75 duration-75 rounded lg'>
                 <div className='lab '>
                   
                     
@@ -75,8 +82,14 @@ function HomeComponent6() {
                     <p className='font-custom text-[18px] font-semibold'>Laboratories in 100+ states</p>
                 </div>
                 
-            </div>
-            <div className=' p-[20px]  hover:border-[2px] hover:border-[red] transition delay-75 duration-75 rounded-lg'>
+            </motion.div>
+            <motion.div 
+             initial={{ opacity:0, y:30 }}
+             whileInView={{ opacity: 1, y:0 }}
+             transition={{delay:0.5,type:'spring', stiffness:120}}
+             viewport={{ once: true }}
+
+            className=' p-[20px]  hover:border-[2px] hover:border-[red] transition delay-75 duration-75 rounded-lg'>
                 <div className='special'>
                     
                 </div>
@@ -84,8 +97,13 @@ function HomeComponent6() {
                     <h1 className='text-5xl font-bold'>{Math.round(specialistNum)}</h1>
                     <p className='font-custom text-[18px] font-semibold'>Laboratory Specialists</p>
                 </div>
-            </div>
-            <div className=' p-[20px]  hover:border-[2px] hover:border-[blue] transition delay-75 duration-75 rounded-lg'>
+            </motion.div>
+            <motion.div 
+             initial={{ opacity:0, y:30 }}
+             whileInView={{ opacity: 1, y:0 }}
+             transition={{delay:0.6,type:'spring', stiffness:120}}
+             viewport={{ once: true }}
+            className=' p-[20px]  hover:border-[2px] hover:border-[blue] transition delay-75 duration-75 rounded-lg'>
                 <div className='material'>
                     
                 </div>
@@ -93,8 +111,13 @@ function HomeComponent6() {
                     <h1 className='text-5xl font-bold'>{Math.round(materialNum)}</h1>
                     <p className='font-custom text-[18px] font-semibold'>Material collection points</p>
                 </div>
-            </div>
-            <div className='p-[20px]  hover:border-[2px] hover:border-[green] transition delay-75 duration-75 rounded-lg'>
+            </motion.div>
+            <motion.div 
+                 initial={{ opacity:0, y:30 }}
+                 whileInView={{ opacity: 1, y:0 }}
+                 transition={{delay:0.4,type:'spring', stiffness:120}}
+                 viewport={{ once: true }}
+            className='p-[20px]  hover:border-[2px] hover:border-[green] transition delay-75 duration-75 rounded-lg'>
                 <div className='patients'>
                     
                 </div>
@@ -102,7 +125,7 @@ function HomeComponent6() {
                     <h1 className='text-5xl font-bold'>{Math.round(patientsNum)}</h1>
                     <p className='font-custom text-[18px] font-semibold'>Patients diagnosed in 2022</p>
                 </div>
-            </div>
+            </motion.div>
 
         </div>
      

@@ -19,13 +19,13 @@ body{
   opacity: 1;
   visibility: visible;
   top: 120px;
-  background-color: red;
+  background-color: #092f6b;
 }
 .john:hover{
   top: 120px;
   opacity: 1;
   visibility: visible;
-  background-color: red;
+  background-color: #092f6b;
 }
 
 

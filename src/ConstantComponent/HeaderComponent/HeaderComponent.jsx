@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { BsLungs } from "react-icons/bs";
 import { MdDialpad } from "react-icons/md";
 import { IoTimeOutline } from "react-icons/io5";
@@ -9,13 +9,17 @@ import { GrTwitter } from "react-icons/gr";
 import { FaFacebookF } from "react-icons/fa";
 import { FaSkype } from "react-icons/fa";
 import { IoIosSend } from "react-icons/io";
+import { FaBasketShopping } from "react-icons/fa6";
 import subpic from './Subnavpictures/subpic1.jpg'
 import subnav2 from './Subnavpictures/subnav2.jpg'
 import subnav3 from './Subnavpictures/subnav3.jpg'
+import { CartContext } from '../../ReusableComponent/CartContext';
 
 
 
 function HeaderComponent() {
+    const { cart } = useContext(CartContext); // Access cart from context
+    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0); 
     let [nav, setNav] = useState('-80%')
     function sidenav() {
         if (nav =='-80%') {
@@ -34,7 +38,18 @@ function HeaderComponent() {
                 <h1  className='font-bold text-3xl text-textc '><BsLungs /></h1>
                 <h1 className=' font-custom text-3xl font-bold text-boldtext'> WILCON LAB </h1>
             </div>
-            <div className='flex justify-end w-[40%] p-[20px] box-border items-center'>
+            <div className='flex justify-end gap-4 w-[40%] p-[20px] box-border items-center'>
+                <div className='cursor-pointer text-[1.3rem]'>
+                     <Link to={'/cart'}>                                 
+                         <FaBasketShopping />  
+                         {totalItems > 0 && (
+                            <span className="absolute top-[30px] right-[80px] bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+                                   {totalItems}
+                            </span>
+                          )}   
+                                                    
+                    </Link>                            
+                 </div>
                 <Button
                         height='90px'
                         width ='4000px'
@@ -42,6 +57,7 @@ function HeaderComponent() {
                         label = 'Ξ'
                         onClick = {sidenav}
                     />
+                   
             </div>
         </div>
 
@@ -76,14 +92,14 @@ function HeaderComponent() {
                             <li className='nav-item john-bro cursor-pointer hover:border-b-[2px] hover:border-[yellow]'>
                                PAGES +
                             </li>
-                            <div className=" john opacity-0 absolute top-[150px] left-[540px] " style={{transition:'1s'}}>
-                                   <ul className='flex flex-col font-custom font-extrabold text-[1.4rem]'>
-                                        <li><Link to={'/Service'}>SERVICES</Link></li>
-                                        <li><Link to={'/Pricing'}>Pricing Plan</Link></li>
-                                        <li><Link to={'/Shop'}>Shop</Link></li>
-                                        <li><Link to={'/cart'}>Cart</Link></li>
-                                        <li><Link to={'/Checkout'}>Checkout</Link></li>
-                                        <li><Link to={'/FAQ'}>FAQs</Link></li>
+                            <div className=" john opacity-0 absolute top-[150px] left-[480px] " style={{transition:'1s'}}>
+                                   <ul className='flex flex-col text-bodybg  font-custom font-extrabold text-[1.4rem]'>
+                                        <li className='hover:text-textc'><Link to={'/Service'}>Services</Link></li>
+                                        <li className='hover:text-textc'><Link to={'/Pricing'}>Pricing Plan</Link></li>
+                                        <li className='hover:text-textc'><Link to={'/Shop'}>Shop</Link></li>
+                                        <li className='hover:text-textc'><Link to={'/cart'}>Cart</Link></li>
+                                        <li className='hover:text-textc'><Link to={'/Checkout'}>Checkout</Link></li>
+                                        <li className='hover:text-textc'><Link to={'/FAQ'}>FAQs</Link></li>
                                     </ul>
                                 </div>
                             <li className='nav-item hover:border-[yellow] hover:border-b-[2px]'><Link to={'/Research'}>RESEARCH</Link></li>
@@ -92,15 +108,31 @@ function HeaderComponent() {
                         </ul>
                     </div>
                     
-                    <div className='grid grid-cols-[20%,80%]'>
-                        <div>
+                    <div className='grid gap-2 grid-cols-[25%,75%]'>
+                        <div className='flex justify-center items-center gap-3'>
+                           
+                            <div>
                             <Button
-                                height='90px'
-                                width ='4000px'
-                                className=' text-2xl font-bold p-[10px]'
+                                className=' text-2xl bg-textc h-[50px]  font-bold p-[10px]'
                                 label = 'Ξ'
                                 onClick = {sidenav}
                             />
+                            </div>
+                            <div className='cursor-pointer text-[1.3rem]'>
+                                <Link to={'/cart'}>
+                                  
+                                <FaBasketShopping className='relative'/>
+                                {totalItems > 0 && (
+                                            <span className="absolute top-[80px] right-[230px] bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+                                                {totalItems}
+                                            </span>
+                                        )}
+                                
+                                </Link>                            
+                            </div>
+
+
+
                         </div>
                         <div className='flex items-center justify-center bg-boldtext text-bodybg font-custom font-semibold text-2xl w-[90%]'>
                             <Link to={'/About'}><h1>BOOK APPOINTMENT</h1></Link>
@@ -113,31 +145,11 @@ function HeaderComponent() {
         
         </div>
 
-        {/* <div className='h-[200px] drops w-[10%] flex absolute left-[550px] justify-center bg-red-500   overflow-hidden '>
-            <ul className='flex flex-col font-custom font-extrabold drops text-[1.4rem]'>
-                <li>
-                    <Link to={'/Service'}>SERVICES</Link>
-                </li>
-                <li>
-                    <Link to={'/Pricing'}>Pricing Plan</Link>
-                </li>
-                <li>
-                    <Link to={'/Cart'}>Cart</Link>
-                </li>
-                <li>
-                    <Link to={'/Checkout'}>Checkout</Link>
-                </li>
-                <li>
-                    <Link to={'/FAQ'}>FAQs</Link>
-                </li>
-            </ul>
-        </div> */}
-
 
 
                         {/* SIDENAV DISPLAY  */}
 
-        <div className=' absolute bg-[#4f4fe0] min-h-[1000px] z-[2] top-[20px] w-[80%]  flex flex-col gap-2 p-[10px]'style={{right:nav, transition:'1s',}}>
+        <div className=' absolute bg-textc min-h-[1000px] z-[2] top-[20px] w-[80%]  flex flex-col gap-2 p-[10px]'style={{right:nav, transition:'1s',}}>
             <div className=' gap-4 flex items-center justify-between  '>   
                 <div className='flex'>
                     <h1  className='font-bold text-2xl text-textc '><BsLungs /></h1>
@@ -154,37 +166,51 @@ function HeaderComponent() {
                     />
             </div>
                         {/* THIS PART OF THE SIDENAV IS HIDDEN FOR LARGE SCREEN  */}
-            <section className='p-[10px] lg:hidden ' onClick={sidenav}>
+            <section className='p-[10px] lg:hidden '>
                 <div className='border-b-[1px] border-b-white'>
                     <h1 className='font-custom font-semibold text-[19px] lg:text-[24px]'> <Link to={'/'}>HOME</Link> </h1>
                 </div>
                 <div className='flex items-center justify-between border-b-[1px] border-b-white min-h-[20px]'>
-                    <h1 className='font-custom font-semibold text-[19px] lg:text-[24px] '><Link to={'/About'}>ABOUT</Link></h1>
-                    <h1 className='font-custom text-[25px] font-semibold'>+</h1>
-
-                    {/* <div className="dropdown dropdown-bottom dropdown-end">
-                            <div tabIndex={0} role="button" className="btn m-1">Click</div>
-                            <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box w-52 p-2 shadow">
-                                <li><a>Item 1</a></li>
-                                <li><a>Item 2</a></li>
-                            </ul>
-                    </div> */}
+                    <h1 className='font-custom font-semibold text-[19px] lg:text-[24px] '  onClick={sidenav}><Link to={'/About'}>ABOUT</Link></h1>
+                    <h1 className='font-custom text-[25px] font-semibold'></h1>
+                </div>
+                <div className="group border-b-[1px] border-b-white">
+                    <div className="flex items-center justify-between">
+                        <h1 className="font-custom font-semibold text-[19px] lg:text-[24px]">
+                            <Link to={"/Service"}>PAGES</Link>
+                        </h1>
+                        <h1 className="font-custom text-[25px] font-semibold">+</h1>
+                    </div>
+                    {/* Dropdown Menu */}
+                    <ul className="hidden group-hover:block bg-b text-bodybg font-custom font-extrabold text-[1.4rem] mt-2 pl-4">
+                        <li className="hover:text-textc"  onClick={sidenav}>
+                            <Link to={"/Service"}>Services</Link>
+                        </li>
+                        <li className="hover:text-textc"   onClick={sidenav}>
+                            <Link to={"/Pricing"}>Pricing Plan</Link>
+                        </li>
+                        <li className="hover:text-textc"  onClick={sidenav}>
+                            <Link to={"/Shop"}>Shop</Link>
+                        </li>
+                        <li className="hover:text-textc"  onClick={sidenav}>
+                            <Link to={"/cart"}>Cart</Link>
+                        </li>
+                        <li className="hover:text-textc"  onClick={sidenav}>
+                            <Link to={"/Checkout"}>Checkout</Link>
+                        </li>
+                        <li className="hover:text-textc"  onClick={sidenav}>
+                            <Link to={"/FAQ"}>FAQs</Link>
+                        </li>
+                    </ul>
                 </div>
                 <div className='flex items-center justify-between border-b-[1px] border-b-white'>
-                    <h1 className='font-custom font-semibold text-[19px] lg:text-[24px] '><Link to={'/Service'}>SERVICE</Link></h1>
-                    <h1 className='font-custom text-[25px] font-semibold'>+</h1>
+                    <h1 className='font-custom font-semibold text-[19px] lg:text-[24px] '  onClick={sidenav}><Link to={'/Research'}>RESEARCH</Link></h1>
                 </div>
                 <div className='flex items-center justify-between border-b-[1px] border-b-white'>
-                    <h1 className='font-custom font-semibold text-[19px] lg:text-[24px] '><Link to={'/Research'}>RESEARCH</Link></h1>
-                    {/* <h1>+</h1> */}
+                    <h1 className='font-custom font-semibold text-[19px] lg:text-[24px] '  onClick={sidenav}><Link to={'/Team'}>TEAM</Link></h1>
                 </div>
                 <div className='flex items-center justify-between border-b-[1px] border-b-white'>
-                    <h1 className='font-custom font-semibold text-[19px] lg:text-[24px] '><Link to={'/Team'}>TEAM</Link></h1>
-                    {/* <h1>+</h1> */}
-                </div>
-                <div className='flex items-center justify-between border-b-[1px] border-b-white'>
-                    <h1 className='font-custom font-semibold text-[19px] lg:text-[24px] '><Link to={'/Contact'}>CONTACT</Link></h1>
-                    {/* <h1>+</h1> */}
+                    <h1 className='font-custom font-semibold text-[19px] lg:text-[24px] '  onClick={sidenav}><Link to={'/Contact'}>CONTACT</Link></h1>
                 </div>
             </section>
 

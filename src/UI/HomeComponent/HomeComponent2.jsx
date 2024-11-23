@@ -2,20 +2,39 @@ import React from 'react'
 import about from './HomePictures/about1.png'
 import about2 from './HomePictures/about2.png'
 import { Link } from 'react-router-dom'
+import {motion} from "motion/react"
+
 
 function HomeComponent2() {
   return (
     <div>
         <div className='min-h-[600px] bg-bodybg  p-[20px]  grid grid-cols-1 lg:grid-cols-2 '>
            <div className='relative'>
-                <div className='min-h-[100px] W-[100px]'>
+                <motion.div
+                      initial={{ opacity: 0, x:-20 }}
+                      whileInView={{ opacity: 1, x:0 }}
+                    transition={{delay:1.2, duration:4}}
+                    viewport={{ once: true }}
+                 className='min-h-[100px] W-[100px]'>
                    <img src={about} alt="" />
-                </div>
-                <div className='min-h-[100px] w-[200px] absolute hidden md:block bottom-[50px] left-4'>
+                </motion.div>
+                <motion.div
+                       initial={{ opacity: 0, x:-20 }}
+                       whileInView={{ opacity: 1, x:0 }}
+                     transition={{delay:1.2, duration:4}}
+                     viewport={{ once: true }}
+                 className='min-h-[100px] w-[200px] absolute hidden md:block bottom-[50px] left-4'
+                >
                     <img src={about2} alt="" />
-                </div>
+                </motion.div>
            </div>
-            <div className='min-h-[100px]  mt-[40px] p-[10px]'>
+            <motion.div 
+                initial={{ opacity: 0, x:20 }}
+                whileInView={{ opacity: 1, x:0 }}
+                transition={{delay:1, duration:3}}
+                viewport={{ once: true }}
+                className='min-h-[100px]  mt-[40px] p-[10px]'
+            >
                 <div>
                     <h2 className=' before:h-[3px] before:w-[40px] before:bg-textc relative text-textc flex items-center font-custom font-semibold text-2xl gap-2'>ABOUT US</h2>
                     <h1 className='text-start text-[28px] md:text-[30px] font-custom font-semibold mt-[20px] text-boldtext'>Best Laboratory For Testing And Research</h1>
@@ -26,7 +45,7 @@ function HomeComponent2() {
                     <Link to={'/Contact'}>TALK WITH EXPERT</Link>
 
                 </div>
-            </div>
+            </motion.div>
             
 
         </div>

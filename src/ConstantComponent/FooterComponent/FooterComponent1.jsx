@@ -72,10 +72,17 @@ function FooterComponent1() {
                 </a>
               
             </nav>
-            <nav className=''>
-                copywright
-            </nav>
        </footer>
+       <div className="bg-boldtext text-center text-bodybg py-4">
+        <div>
+        <p className="font-custom text-[1rem] md:text-[1.2rem]">
+          &copy; {new Date().getFullYear()} Your Company Name. All Rights Reserved.
+        </p>
+        </div>
+        <div>
+
+        </div>
+      </div>
     </div>
   )
 }

@@ -4,6 +4,8 @@ import { SiFastly } from "react-icons/si";
 import { TbHours24 } from "react-icons/tb";
 import { GiDarkSquad } from "react-icons/gi";
 import { FaArrowRight } from "react-icons/fa";
+import {motion} from "motion/react"
+
 
 function AboutComponent5() {
   return (
@@ -15,7 +17,12 @@ function AboutComponent5() {
             </div>
             <div className='min-h-[400px] bg w-full text-bodybg '>
                 <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 min-h-[200px] gap-4 lg:justify-center items-center lg:w-[95%] lg:translate-x-20 '>
-                    <div className='min-h-[200px] bg group p-[10px]'>
+                    <motion.div
+                    initial={{ opacity:0, y:60 }}
+                    whileInView={{ opacity: 1, y:0 }}
+                    transition={{delay:0.5,type:'spring', stiffness:120}}
+                    viewport={{ once: true }}
+                     className='min-h-[200px] bg group p-[10px]'>
                         <div className='min-h-[100px] w-[100px] rounded-[50%] bg-[#0000ff89] flex items-center justify-center transition duration-500 ease-in group-hover:bg-[blue] text-[blue] group-hover:text-bodybg text-5xl'> 
                             <GiMicroscope />
                         </div>
@@ -24,8 +31,14 @@ function AboutComponent5() {
                             <p>Nam eget dui vel quam sodales
                             semper quis porttitor tortor.</p>
                         </div>
-                    </div>
-                    <div className='min-h-[200px] bg group p-[10px]'>
+                    </motion.div>
+                    <motion.div 
+                    initial={{ opacity:0, y:60 }}
+                    whileInView={{ opacity: 1, y:0 }}
+                    transition={{delay:0.6,type:'spring', stiffness:120}}
+                    viewport={{ once: true }}
+                    className='min-h-[200px] bg group p-[10px]'
+                    >
                         <div className='min-h-[100px] w-[100px] rounded-[50%] bg-[#ff00007c] flex items-center justify-center transition duration-500 ease-in group-hover:bg-[red] text-[red] group-hover:text-bodybg text-5xl'>
                             <SiFastly />
                         </div>
@@ -34,8 +47,14 @@ function AboutComponent5() {
                             <p>Nam eget dui vel quam sodales
                             semper quis porttitor tortor.</p>
                         </div>
-                    </div>
-                    <div className='min-h-[200px]  group p-[10px]'>
+                    </motion.div>
+                    <motion.div 
+                    initial={{ opacity:0, y:60 }}
+                    whileInView={{ opacity: 1, y:0 }}
+                    transition={{delay:0.7,type:'spring', stiffness:120}}
+                    viewport={{ once: true }}
+                    className='min-h-[200px]  group p-[10px]'
+                    >
                         <div className='min-h-[100px] w-[100px] rounded-[50%] bg-[#0080005d] flex items-center justify-center transition duration-500 ease-in group-hover:bg-[green] text-[green] group-hover:text-bodybg text-5xl'>
                          <TbHours24 />
                         </div>
@@ -44,8 +63,13 @@ function AboutComponent5() {
                             <p>Nam eget dui vel quam sodales
                             semper quis porttitor tortor.</p>
                         </div>
-                    </div>
-                    <div className='group p-[10px]'>
+                    </motion.div>
+                    <motion.div 
+                    initial={{ opacity:0, y:60 }}
+                    whileInView={{ opacity: 1, y:0 }}
+                    transition={{delay:0.8,type:'spring', stiffness:120}}
+                    viewport={{ once: true }}
+                    className='group p-[10px]'>
                         <div className='min-h-[100px] w-[100px] rounded-[50%] bg-[#2c8cd07c] flex items-center justify-center transition duration-500 ease-in group-hover:bg-textc text-textc font-semibold group-hover:text-bodybg text-5xl'>
                          <GiDarkSquad />
                         </div>
@@ -54,7 +78,7 @@ function AboutComponent5() {
                             <p>Nam eget dui vel quam sodales
                             semper quis porttitor tortor.</p>
                         </div>
-                    </div>
+                    </motion.div>
 
                 </div>
             </div>

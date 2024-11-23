@@ -10,6 +10,8 @@ import { FaLungs } from "react-icons/fa";
 import { FaBacterium } from "react-icons/fa";
 import { LuDna } from "react-icons/lu";
 import { GiStarSattelites } from "react-icons/gi";
+import {motion} from "motion/react"
+
 
 
 function HomeComponent3() {
@@ -28,7 +30,12 @@ function HomeComponent3() {
               </div>
             </div>
             <div className='min-h-[500px]  grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-6'>
-              <div  className='p-[10px]'>
+              <motion.div  
+                 initial={{ opacity:0, y:60 }}
+                 whileInView={{ opacity: 1, y:0 }}
+                 transition={{delay:0.4,type:'spring', stiffness:120}}
+                 viewport={{ once: true }}
+              className='p-[10px]'>
                 <div className='min-h-[100px] w-[30%] translate-x-[40px]  '>
                     <div className='relative  bg-red-600 hexagon hover:bg-[blue] hover:transition duration-700 ease-in-out '> 
                       <div className='absolute left-[10px] mt-[30px] h-[10px] z-[5] text-6xl text-[#4d4d84] hover:text-bodybg hover:"transition duration-700 ease-in-out '>
@@ -40,8 +47,13 @@ function HomeComponent3() {
                    <h1 className='font-custom font-semibold text-3xl text-boldtext'>HEMOGLOBIN TEST</h1>
                    <h3 className='text-start'>Nam eget dui vel quam sodales semper quis porttitor tortor. Vivamus quis ex nulla.</h3>
                  </div>
-              </div>
-              <div  className='p-[10px]'>
+              </motion.div>
+              <motion.div
+                  initial={{ opacity:0, y:60 }}
+                  whileInView={{ opacity: 1, y:0 }}
+                  transition={{delay:0.5,type:'spring', stiffness:120}}
+                  viewport={{ once: true }}
+                className='p-[10px]'>
                 <div className='min-h-[100px] w-[30%] translate-x-[40px]  '>
                   <div className='relative  hexagon hover:bg-[#e64040] hover:transition duration-700 ease-in-out'>                         
                     <div className='absolute left-[10px] mt-[30px] h-[10px] z-[5] text-6xl text-[red] hover:text-bodybg hover:"transition duration-700 ease-in-out  '>
@@ -53,8 +65,14 @@ function HomeComponent3() {
                   <h1 className='font-custom font-semibold text-3xl text-boldtext'>BLOOD TESTING</h1>
                   <h3 className='text-start'>Nam eget dui vel quam sodales semper quis porttitor tortor. Vivamus quis ex nulla.</h3>
                 </div>
-              </div>
-              <div className='p-[10px]'>    
+              </motion.div>
+              <motion.div 
+                 initial={{ opacity:0, y:60 }}
+                 whileInView={{ opacity: 1, y:0 }}
+                 transition={{delay:0.6,type:'spring', stiffness:120}}
+                 viewport={{ once: true }}
+                 className='p-[10px]'
+              >    
               <div className='min-h-[100px] w-[30%] translate-x-[40px] '>
                   <div className='relative hexagon  hexagon hover:bg-[#2b2b9d] hover:transition duration-700 ease-in-out '>                         
                     <div className='absolute left-[10px] mt-[30px] h-[10px] z-[5] text-6xl text-[blue] hover:text-bodybg hover:"transition duration-700 ease-in-out '>
@@ -67,8 +85,14 @@ function HomeComponent3() {
                   <h3>Nam eget dui vel quam sodales semper quis porttitor tortor. Vivamus quis ex nulla.</h3>
 
                 </div>
-              </div>
-              <div className='p-[10px]'>
+              </motion.div>
+              <motion.div 
+                 initial={{ opacity:0, y:60 }}
+                 whileInView={{ opacity: 1, y:0 }}
+                 transition={{delay:0.7,type:'spring', stiffness:120}}
+                 viewport={{ once: true }}
+                className='p-[10px]'
+              >
                 <div className='min-h-[100px] w-[30%] translate-x-[40px] '>
                   <div className='relative hexagon hover:bg-[#9ee09e] hover:transition duration-700 ease-in-out'>                         
                     <div className='absolute left-[10px] mt-[30px] h-[10px] z-[5] text-6xl text-[green] hover:text-bodybg hover:"transition duration-700 ease-in-out '>
@@ -81,8 +105,14 @@ function HomeComponent3() {
                   <h3>Nam eget dui vel quam sodales semper quis porttitor tortor. Vivamus quis ex nulla.</h3>
 
                 </div>
-              </div>
-              <div className='p-[10px]'>
+              </motion.div>
+              <motion.div
+                   initial={{ opacity:0, y:60 }}
+                   whileInView={{ opacity: 1, y:0 }}
+                   transition={{delay:0.4,type:'spring', stiffness:120}}
+                   viewport={{ once: true }}
+                 className='p-[10px]'
+              >
                 <div className='min-h-[100px] w-[30%] translate-x-[40px]'>
                   <div className='relative hexagon hover:bg-[#9ee09e] hover:transition duration-700 ease-in-out'>                         
                     <div className='absolute left-[10px] mt-[30px] min-h-[10px] z-[5]  text-6xl text-[green] hover:text-bodybg hover:"transition duration-700 ease-in-out  '>
@@ -94,8 +124,14 @@ function HomeComponent3() {
                   <h1 className='font-custom font-semibold text-3xl text-boldtext'>HISTOPATOLOGY</h1>
                   <h3 className='text-start'>Nam eget dui vel quam sodales semper quis porttitor tortor. Vivamus quis ex nulla.</h3>
                 </div>
-              </div>
-              <div className='p-[10px]'>
+              </motion.div>
+              <motion.div
+                 initial={{ opacity:0, y:60 }}
+                 whileInView={{ opacity: 1, y:0 }}
+                 transition={{delay:0.5,type:'spring', stiffness:120}}
+                 viewport={{ once: true }}
+                 className='p-[10px]'
+              >
                <div className='min-h-[100px] w-[30%] translate-x-[40px]  '>
                   <div className='relative hexagon hover:bg-[skyblue] hover:transition duration-700 ease-in-out'>                         
                     <div className='absolute left-[10px] mt-[30px] h-[10px] z-[5]  text-6xl text-[#1a485b] hover:text-bodybg hover:"transition duration-700 ease-in-out'>
@@ -107,8 +143,13 @@ function HomeComponent3() {
                   <h1 className='font-custom font-semibold text-3xl text-boldtext'>BIOCHEMISTRY</h1>
                   <h3 className='text-start'>Nam eget dui vel quam sodales semper quis porttitor tortor. Vivamus quis ex nulla.</h3>
                 </div>
-              </div>
-              <div  className='p-[10px]'>
+              </motion.div>
+              <motion.div 
+                 initial={{ opacity:0, y:60 }}
+                 whileInView={{ opacity: 1, y:0 }}
+                 transition={{delay:0.6,type:'spring', stiffness:120}}
+                 viewport={{ once: true }}
+                className='p-[10px]'>
                 <div className='min-h-[100px] w-[30%] translate-x-[40px]   '>
                   <div className='relative  bg-red-600 hexagon hover:bg-[#272771] hover:transition duration-700 ease-in'>                         
                     <div className='absolute left-[10px] mt-[30px] h-[10px] z-[5] text-6xl text-[#29296c] hover:text-bodybg hover:"transition duration-700 ease-in-out  '>
@@ -120,8 +161,14 @@ function HomeComponent3() {
                   <h1 className='font-custom font-semibold text-3xl text-boldtext'>GENETICS</h1>
                   <h3>Nam eget dui vel quam sodales semper quis porttitor tortor. Vivamus quis ex nulla.</h3>
                 </div>
-              </div>
-              <div  className='p-[10px]'>
+              </motion.div>
+              <motion.div  
+                 initial={{ opacity:0, y:60 }}
+                 whileInView={{ opacity: 1, y:0 }}
+                 transition={{delay:0.7,type:'spring', stiffness:120}}
+                 viewport={{ once: true }}
+                className='p-[10px]'
+              >
                 <div className='min-h-[100px] w-[30%] translate-x-[40px] '>
                   <div className='relative  hexagon hover:bg-[#e64040] hover:transition duration-700 ease-in'>                         
                     <div className='absolute left-[10px] mt-[30px] h-[10px] z-[5] text-6xl  text-[red] hover:text-bodybg hover:"transition duration-700 ease-in-out'>
@@ -133,7 +180,7 @@ function HomeComponent3() {
                   <h1 className='font-custom font-semibold text-3xl text-boldtext'>BLOOD TESTING</h1>
                   <h3>Nam eget dui vel quam sodales semper quis porttitor tortor. Vivamus quis ex nulla.</h3>
                 </div>
-              </div>                    
+              </motion.div>                    
             </div>
         </div>
     </div>
