@@ -18,7 +18,7 @@ function HomeComponent12() {
     
       };
   return (
-    <div className='min-h-[100px] w-full bg-white hidden md:block lg:hidden '>
+    <div className='min-h-[100px] w-full hidden md:block lg:hidden '>
     <div className="slider-container p-[20px] box-border w-[99%]  ">
         <Slider {...settings}>
             <div className='p-5'>
