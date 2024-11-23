@@ -168,7 +168,7 @@ function HeaderComponent() {
                         {/* THIS PART OF THE SIDENAV IS HIDDEN FOR LARGE SCREEN  */}
             <section className='p-[10px] lg:hidden '>
                 <div className='border-b-[1px] border-b-white'>
-                    <h1 className='font-custom font-semibold text-[19px] lg:text-[24px]'> <Link to={'/'}>HOME</Link> </h1>
+                  <h1 className='font-custom font-semibold text-[19px] lg:text-[24px]'onClick={sidenav} > <Link to={'/'}>HOME</Link> </h1>
                 </div>
                 <div className='flex items-center justify-between border-b-[1px] border-b-white min-h-[20px]'>
                     <h1 className='font-custom font-semibold text-[19px] lg:text-[24px] '  onClick={sidenav}><Link to={'/About'}>ABOUT</Link></h1>
