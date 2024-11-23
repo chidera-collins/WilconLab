@@ -87,9 +87,9 @@ function HeaderComponent() {
                 <div className=' grid grid-cols-[70%,30%] gap-6 items-center'>
                     <div className='p-[5px] box-border font-custom text-[20px] font-semibold'> 
                     <ul className='flex gap-4'>
-                            <li className='nav-item hover:border-b-[2px] hover:border-[yellow]'><Link to={'/'}>HOME</Link></li>
-                            <li className='nav-item hover:border-b-[2px] hover:border-[yellow]'><Link to={'/About'}>ABOUT</Link></li>
-                            <li className='nav-item john-bro cursor-pointer hover:border-b-[2px] hover:border-[yellow]'>
+                            <li className='nav-item hover:border-b-[2px] hover:border-boldtext'><Link to={'/'}>HOME</Link></li>
+                            <li className='nav-item hover:border-b-[2px] hover:border-boldtext'><Link to={'/About'}>ABOUT</Link></li>
+                            <li className='nav-item john-bro cursor-pointer hover:border-b-[2px] hover:border-boldtext'>
                                PAGES +
                             </li>
                             <div className=" john opacity-0 absolute top-[150px] left-[480px] " style={{transition:'1s'}}>
@@ -102,9 +102,9 @@ function HeaderComponent() {
                                         <li className='hover:text-textc'><Link to={'/FAQ'}>FAQs</Link></li>
                                     </ul>
                                 </div>
-                            <li className='nav-item hover:border-[yellow] hover:border-b-[2px]'><Link to={'/Research'}>RESEARCH</Link></li>
-                            <li className='nav-item hover:border-[yellow] hover:border-b-[2px]'><Link to={'/Team'}>TEAM DETAILS</Link></li>
-                            <li className='nav-item hover:border-[yellow] hover:border-b-[2px]'><Link to={'/Contact'}>CONTACT</Link></li>
+                            <li className='nav-item hover:border-boldtext hover:border-b-[2px]'><Link to={'/Research'}>RESEARCH</Link></li>
+                            <li className='nav-item hover:border-boldtext hover:border-b-[2px]'><Link to={'/Team'}>TEAM DETAILS</Link></li>
+                            <li className='nav-item hover:border-boldtext hover:border-b-[2px]'><Link to={'/Contact'}>CONTACT</Link></li>
                         </ul>
                     </div>
                     
@@ -182,23 +182,23 @@ function HeaderComponent() {
                         <h1 className="font-custom text-[25px] font-semibold">+</h1>
                     </div>
                     {/* Dropdown Menu */}
-                    <ul className="hidden group-hover:block bg-b text-bodybg font-custom font-extrabold text-[1.4rem] mt-2 pl-4">
-                        <li className="hover:text-textc"  onClick={sidenav}>
+                    <ul className="max-h-0 overflow-hidden group-hover:max-h-[500px] transition-[max-height] duration-500 ease-in-out bg- text-bodybg font-custom font-extrabold text-[1.4rem] mt-2 pl-4">
+                        <li className="hover:text-boldtext"  onClick={sidenav}>
                             <Link to={"/Service"}>Services</Link>
                         </li>
-                        <li className="hover:text-textc"   onClick={sidenav}>
+                        <li className="hover:text-boldtext"   onClick={sidenav}>
                             <Link to={"/Pricing"}>Pricing Plan</Link>
                         </li>
-                        <li className="hover:text-textc"  onClick={sidenav}>
+                        <li className="hover:text-boldtext"  onClick={sidenav}>
                             <Link to={"/Shop"}>Shop</Link>
                         </li>
-                        <li className="hover:text-textc"  onClick={sidenav}>
+                        <li className="hover:text-boldtext"  onClick={sidenav}>
                             <Link to={"/cart"}>Cart</Link>
                         </li>
-                        <li className="hover:text-textc"  onClick={sidenav}>
+                        <li className="hover:text-boldtext"  onClick={sidenav}>
                             <Link to={"/Checkout"}>Checkout</Link>
                         </li>
-                        <li className="hover:text-textc"  onClick={sidenav}>
+                        <li className="hover:text-boldtext"  onClick={sidenav}>
                             <Link to={"/FAQ"}>FAQs</Link>
                         </li>
                     </ul>
