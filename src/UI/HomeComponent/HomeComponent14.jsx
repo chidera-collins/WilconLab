@@ -51,7 +51,7 @@ function HomeComponent14() {
   };
 
   return (
-    <div className="relative w-full overflow-hidden hidden md:block">
+    <div className="relative w-full overflow-hidden  hidden md:block">
       {/* Thumbnails */}
       <div className="h-[150px] w-full bg-[green] flex gap-4 justify-center items-center">
         {slides.map((slide, index) => (

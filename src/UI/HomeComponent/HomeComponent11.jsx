@@ -20,7 +20,7 @@ function HomeComponent11() {
     
       };
   return (
-    <div className='min-h-[100px] w-full md:hidden'>
+    <div className='min-h-[100px] w-full bg-white md:hidden'>
         <div className="slider-container p-[20px] box-border w-[95%]  ">
             <Slider {...settings}>
                 <div>

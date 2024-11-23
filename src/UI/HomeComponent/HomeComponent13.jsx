@@ -19,7 +19,7 @@ const settings = {
 function HomeComponent13() {
   return (
     <div className='min-h-[100px] w-full bg-bodybg hidden md:hidden lg:block'>
-    <div className="slider-container p-[20px] box-border w-[95%] translate-x-9 ">
+    <div className="slider-container bg-bodybg p-[20px] box-border w-[95%] translate-x-9 ">
         <Slider {...settings}>
             <div className='p-5'>
                 <div className='flex items-center'>
