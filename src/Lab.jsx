@@ -13,11 +13,24 @@ import CheckoutComponent from './UI/CheckoutComponent/CheckoutComponent'
 import PricingComponent from './UI/PricingComponent/PricingComponent'
 import CartComponent from "./UI/CartComponent/CartComponent";
 import FooterComponent from "./ConstantComponent/FooterComponent/FooterComponent";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
+
+const ScrollToTop=()=>{
+    const {pathname} = useLocation();
+
+    useEffect(()=>{
+        window.scrollTo(0,0);
+
+    },[pathname]);
+    return null;
+};
 
 function Lab() {
     return (
         <CartProvider>
             <BrowserRouter>
+            <ScrollToTop/>
                 <HeaderComponent />
                 <Routes>
                     <Route path="/" element={<HomeComponent />} />

@@ -10,6 +10,9 @@
 body{
   overflow-x: hidden;
 }
+html {
+  scroll-behavior: smooth;
+}
 .john{
   /* top: 400px; */
   visibility: hidden;
