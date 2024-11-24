@@ -18,7 +18,7 @@ import HomeComponent15 from './HomeComponent15'
 
 function HomeComponent() {
   return (
-    <div className=' bg-white mt-[100px] dark:text-black'>
+    <div className=' bg-white mt-[100px] overflow-x-hidden dark:text-black'>
         <HomeComponent1/>
         <HomeComponent2/>
         <HomeComponent3/>
