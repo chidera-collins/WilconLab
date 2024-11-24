@@ -9,7 +9,7 @@ import ServicesComponent7 from './ServicesComponent7'
 
 function ServiceComponent() {
   return (
-    <div className='mt-[110px]'>
+    <div className='mt-[110px] dark:text-black'>
       <ServiceComponent1/>
       <ServicesComponent2/>
       <ServiceComponent3/>

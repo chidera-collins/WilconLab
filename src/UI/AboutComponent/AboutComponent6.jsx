@@ -67,7 +67,7 @@ function AboutComponent6() {
           </div>
 
 
-                    {/* FOR MEDIUM AND LARGE SCREEN */}
+                    {/* FOR MEDIUM SCREEN*/}
 
           <div className='min-h-[200px] p-[10px] hidden items-center justify-center md:flex '>
             <div className='flex w-[80%] min-h-[50px] items-center bg- '>
@@ -92,7 +92,7 @@ function AboutComponent6() {
           <div className='min-h-[100px] bg p-[20px] ' style={{display:process}}>
 
             <section >
-              <h1 className='text-center font-custom font-medium dark:text-bodybg text-[1.2rem] md:text-[1.4rem]'>Your full service lab for clinical trials. Our process is to ensure the generation of
+              <h1 className='text-center font-custom font-medium dark:text-boldtext text-[1.2rem] md:text-[1.4rem]'>Your full service lab for clinical trials. Our process is to ensure the generation of
               accurate and precise findings</h1>
             </section>
 
@@ -103,7 +103,7 @@ function AboutComponent6() {
                 </div>
                 <div className='text-center'>
                   <h1 className='text-[2rem] font-custom font-semibold text-boldtext'>Generate Proposal</h1>
-                  <p className='font-custom text-[1.3rem]'>Testing Begins many varios
+                  <p className='font-custom text-[1.3rem] dark:text-black'>Testing Begins many varios
                   suffered alten in some</p>
                 </div>
               </div>
@@ -113,7 +113,7 @@ function AboutComponent6() {
                 </div>
                 <div className='text-center '> 
                   <h1 className='text-[2rem] font-custom font-semibold text-boldtext'>Testing Begins</h1>
-                  <p className='font-custom text-[1.3rem]'>There are many varios passages
+                  <p className='font-custom text-[1.3rem] dark:text-black'>There are many varios passages
                   suffered alten in some</p>
                 </div>
               </div>
@@ -123,7 +123,7 @@ function AboutComponent6() {
                 </div>
                 <div className='text-center'>
                   <h1 className='text-[2rem] font-custom font-semibold text-boldtext'>Reports Delivered</h1>
-                    <p className='font-custom text-[1.3rem]'>There are many varios passages
+                    <p className='font-custom text-[1.3rem] dark:text-black'>There are many varios passages
                     suffered alten in some</p>
                 </div>
               </div>
@@ -135,16 +135,16 @@ function AboutComponent6() {
 
           <div className='min-h-[100px] bg p-[20px] ' style={{display:mission}}>
             <section >
-                <h1 className='text-center font-custom font-medium dark:text-bodybg text-[1.2rem] md:text-[1.4rem]'>Your full service lab for clinical trials. Our process is to ensure the generation of
+                <h1 className='text-center font-custom font-medium dark:text-boldtext text-[1.2rem] md:text-[1.4rem]'>Your full service lab for clinical trials. Our process is to ensure the generation of
                 accurate and precise findings</h1>
             </section>
             <div className='min-h-[100px] bg mt-10'>
               <div className='text-center leading-6'>
                 <h1 className='font-custom font-semibold text-boldtext text-[1.9rem] md:text-[2.5rem]'>Our Mission is Give You Always Best Results.</h1>
-                <p className=' dark:text-bodybg text-[1.3rem] font-custom font-medium mt-5'>
+                <p className=' dark:text-black text-[1.3rem] font-custom font-medium mt-5'>
                    Exerci tation ullamcorper suscipit lobortis nisl aliquip ex ea commodo claritatem insitamconse quat.Exerci tation ullamcorper suscipit loborti excommodo habent claritatem insitamconse quat.Exerci tationlobortis nisl aliquip ex ea commodo habent claritatem insitamconse quat.
                 </p>
-                <p className=' dark:text-bodybg text-[1.3rem] font-custom font-medium mt-5'>
+                <p className=' dark:text-black text-[1.3rem] font-custom font-medium mt-5'>
                 Exerci tation ullamcorper suscipit lobortis nisl aliquip ex ea commodo claritatem insitamconse quat.Exerci tation ullamcorper suscip
                 </p>
               </div>
@@ -167,7 +167,7 @@ function AboutComponent6() {
 
           <div className='min-h-[100px] bg- p-[20px]' style={{display:value}}>
             <section >
-                  <h1 className='text-center font-custom font-medium dark:text-bodybg text-[1.2rem] md:text-[1.4rem]'>Your full service lab for clinical trials. Our process is to ensure the generation of
+                  <h1 className='text-center font-custom font-medium dark:text-boldtext text-[1.2rem] md:text-[1.4rem]'>Your full service lab for clinical trials. Our process is to ensure the generation of
                   accurate and precise findings</h1>
             </section>
             <div className='min-h-[100px] bg mt-10'>
@@ -175,10 +175,10 @@ function AboutComponent6() {
                 <h1 className='font-custom font-semibold text-boldtext text-[1.9rem] md:text-[2.5rem]'>
                   We are Trusted by over 25000+ of customers.
                 </h1>
-                <p className=' dark:text-bodybg text-[1.3rem] font-custom font-medium mt-5'>
+                <p className=' dark:text-black text-[1.3rem] font-custom font-medium mt-5'>
                    Exerci tation ullamcorper suscipit lobortis nisl aliquip ex ea commodo claritatem insitamconse quat.Exerci tation ullamcorper suscipit loborti excommodo habent claritatem insitamconse quat.Exerci tationlobortis nisl aliquip ex ea commodo habent claritatem insitamconse quat.
                 </p>
-                <p className=' dark:text-bodybg text-[1.3rem] font-custom font-medium mt-5'>
+                <p className=' dark:text-black text-[1.3rem] font-custom font-medium mt-5'>
                 Exerci tation ullamcorper suscipit lobortis nisl aliquip ex ea commodo claritatem insitamconse quat.Exerci tation ullamcorper suscip
                 </p>
               </div>

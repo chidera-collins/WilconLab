@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa6";
 function PricingComponent2() {
   return (
     <div>
-          <div className='min-h-[1700px] w-full bg-white p-[10px] md:hidden'>
+          <div className='min-h-[1700px] dark:text-black w-full bg-white p-[10px] md:hidden'>
             <div className='min-h-[100px] w-full bg- flex flex-col items-center justify-center'>
                 <h1 className='uppercase relative flex items-center before:mt-2 text-[1rem] font-custom font-semibold before:w-[24px] before:h-[3px] before:bg-textc after:h-[3px] after:w-[24px] after:bg-textc after:mt-2 gap-1 text-textc'>price & plan</h1>
                 <h1 className='capitalize font-custom font-bold text-[1.5rem] text-boldtext' style={{wordSpacing:'4px'}}>choose your plan</h1>

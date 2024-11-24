@@ -27,7 +27,7 @@ function FAQComponent1() {
             </div>
             <div>
                 <h1 className=' relative  text-2xl font-custom font-extrabold tracking-[3px]'>Wilcon Lab : ASKING QUESTIONS</h1>
-                <h1 className='absolute flex before:h-[3px] before:w-[220px] before:bg-bodybg right-[260px]'></h1>
+                <h1 className='absolute flex before:h-[3px] before:w-[220px] before:bg-bodybg right-[17%]'></h1>
             </div>
       </div>
     </div>

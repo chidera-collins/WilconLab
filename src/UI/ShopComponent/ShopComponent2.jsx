@@ -70,11 +70,11 @@ function ShopComponent2({ data = [] }) {
                 </div>
             )}
             <div className="md:flex p-[20px] md:p-[30px] items-center justify-between">
-                <div>
+                <div className='dark:text-black'>
                     <h1>Showing {firstIndex + 1}-{lastIndex} of {data.length}</h1>
                 </div>
                 <div>
-                    <span>Sort by:</span>
+                    <span className='dark:text-black'>Sort by:</span>
                     <select
                         className="max-w-36 select bg-bodybg text-boldtext font-custom font-bold text-[1rem]"
                         value={options}

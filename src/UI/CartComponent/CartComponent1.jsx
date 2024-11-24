@@ -27,7 +27,7 @@ function CartComponent1() {
             </div>
             <div>
                 <h1 className=' relative  text-2xl font-custom font-extrabold'>Wilcon Lab : MY CART</h1>
-                <h1 className='absolute flex before:h-[3px] before:w-[90px] before:bg-bodybg  right-[240px]'></h1>
+                <h1 className='absolute flex before:h-[3px] before:w-[90px] before:bg-bodybg xl:right-[18%]   right-[16.5%]'></h1>
             </div>
             
 

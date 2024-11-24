@@ -27,7 +27,7 @@ function ServiceComponent1() {
             </div>
             <div>
                 <h1 className=' relative  text-2xl font-custom font-extrabold tracking-[3px]'>Wilcon Lab : SERVICES</h1>
-                <h1 className='absolute flex before:h-[3px] before:w-[90px] before:bg-bodybg right-[260px]'></h1>
+                <h1 className='absolute flex before:h-[3px] before:w-[90px] before:bg-bodybg right-[16%] xl:right-[17%]'></h1>
             </div>
       </div>
     </div>

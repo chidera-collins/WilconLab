@@ -13,7 +13,7 @@ import AboutComponent10 from './AboutComponent10'
 function AboutComponent() {
 
   return (
-    <div className=' mt-[110px]'>
+    <div className='  bg-white mt-[110px]'>
       <AboutComponent1/>
       <AboutComponent2/>
       <AboutComponent3/>

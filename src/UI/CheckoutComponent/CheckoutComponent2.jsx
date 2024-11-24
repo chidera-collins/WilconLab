@@ -11,14 +11,14 @@ function CheckoutComponent2() {
     <div>
         <div>
             <form action="">
-                <div className='min-h-[100px] lg:translate-x-20   lg:w-[90%] bg-bodybg grid gap-4 grid-cols-1 lg:grid-cols-2 p-[20px] lg:justify-center font-custom lg:p-[30px]'>
+                <div className='min-h-[100px] lg:translate-x-20  dark:bg-bodybg  lg:w-[90%] bg-bodybg grid gap-4 grid-cols-1 lg:grid-cols-2 p-[20px] lg:justify-center font-custom lg:p-[30px]'>
                     <div>
                     <div>
                         <h1 className='text-boldtext text-[1.3rem] font-bold'>Billing address</h1>
                     </div>
                     <div>
                             <label className='text-[1.1rem] font-semibold'>COUNTRY <span className='text-[red]'>*</span></label>
-                            <select className="flex select select-bordered select-sm w-full  capitalize " required>
+                            <select className="flex select select-bordered select-sm w-full  dark:bg-white capitalize " required>
                             <option disabled selected>united states</option>
                             <option>Nigeria</option>
                             <option>ghana</option>
@@ -37,7 +37,7 @@ function CheckoutComponent2() {
                                         id="firstName"
                                         placeholder="Type here"
                                         required
-                                        className="input input-bordered input-sm w-full"
+                                        className="input input-bordered input-sm w-full  dark:bg-white"
                                     />
                                 </div>
 
@@ -49,7 +49,7 @@ function CheckoutComponent2() {
                                         type="text"
                                         id="lastName"
                                         placeholder="Type here"
-                                        className="input input-bordered input-sm w-full"
+                                        className="input input-bordered input-sm w-full dark:bg-white"
                                         required
                                     />
                                 </div>
@@ -59,7 +59,7 @@ function CheckoutComponent2() {
                                 <input
                                         type="text"
                                         id="company name"
-                                        className="input input-bordered input-sm w-full"
+                                        className="input input-bordered input-sm w-full dark:bg-white"
                                 />
                                 <label htmlFor="lastName" className="block mt-1 font-semibold">
                                         Address <span className='text-[red]'>*</span>
@@ -67,13 +67,13 @@ function CheckoutComponent2() {
                                     <input
                                         type="text"
                                         placeholder="Street Address"
-                                        className="input input-bordered input-sm w-full"
+                                        className="input input-bordered input-sm w-full dark:bg-white"
                                         required
                                     />
                                     <input
                                         type="text"
                                         placeholder=" Apartment suite , unit etc (optional)"
-                                        className="input input-bordered input-sm w-full mt-[10px]"
+                                        className="input input-bordered input-sm w-full mt-[10px] dark:bg-white"
                                     />
                                 <label htmlFor="lastName" className="block mt-1 font-semibold">
                                         Town/City <span className='text-[red]'>*</span>
@@ -81,7 +81,7 @@ function CheckoutComponent2() {
                                     <input
                                         type="text"
                                         placeholder="Town/City"
-                                        className="input input-bordered input-sm w-full"
+                                        className="input input-bordered input-sm w-full dark:bg-white"
                                         required
                                     />
                             </div>
@@ -94,7 +94,7 @@ function CheckoutComponent2() {
                                         type="text"
                                         placeholder="Enter your state"
                                         required
-                                        className="input input-bordered input-sm w-full"
+                                        className="input input-bordered input-sm w-full dark:bg-white"
                                     />
                                 </div>
 
@@ -105,7 +105,7 @@ function CheckoutComponent2() {
                                     <input
                                         type="text"
                                         placeholder="Postal/Zip"
-                                        className="input input-bordered input-sm w-full"
+                                        className="input input-bordered input-sm w-full dark:bg-white"
                                         required
                                     />
                                 </div>
@@ -119,7 +119,7 @@ function CheckoutComponent2() {
                                         type="text"
                                         placeholder="Enter your email"
                                         required
-                                        className="input input-bordered input-sm w-full"
+                                        className="input input-bordered input-sm w-full dark:bg-white"
                                     />
                                 </div>
 
@@ -130,7 +130,7 @@ function CheckoutComponent2() {
                                     <input
                                         type="text"
                                         placeholder="Postal/Zip"
-                                        className="input input-bordered input-sm w-full"
+                                        className="input input-bordered input-sm w-full dark:bg-white"
                                         required
                                     />
                                 </div>

@@ -32,13 +32,13 @@ function TeamComponent2() {
                     <h1 className='font-custom text-textc  font-medium  text-[1.3rem]'>GENETIC SPECIALIST</h1>
                 </div>
                 <article className='mt-[20px] leading-6'>
-                    <p className='font-custom  text-start'>
+                    <p className='font-custom dark:text-black  text-start'>
                         Providing insight-driven transformation to
                         investment banks, wealth and asset mana,
                         exchanges, Finance
                     </p>
                 </article>
-                <div className='mt-[20px] leading-8 font-custom text-[1.2rem]'>
+                <div className='mt-[20px] dark:text-black leading-8 font-custom text-[1.2rem]'>
                     <h1>EXPERTISE:  Genetic Specialist</h1>
                     <h1>Experience: 15years</h1>
                     <h1>Email:  chideracollins24@gmail.com</h1>

@@ -6,7 +6,7 @@ import ResearchComponent4 from './ResearchComponent4'
 
 function ResearchComponent() {
   return (
-    <div className='mt-[110px]'>
+    <div className='mt-[110px] bg-white'>
       <ResearchComponent1/>
       <ResearchComponent2/>
       <ResearchComponent3/>

@@ -28,7 +28,7 @@ function ResearchComponent1() {
             </div>
             <div>
                 <h1 className=' relative  text-2xl font-custom font-extrabold'>Wilcon Lab : PROJECT</h1>
-                <h1 className='absolute flex before:h-[3px] before:w-[70px] before:bg-bodybg  right-[252px]'></h1>
+                <h1 className='absolute flex before:h-[3px] before:w-[70px] before:bg-bodybg  right-[16.5%] xl:right-[18%]'></h1>
             </div>
             
 

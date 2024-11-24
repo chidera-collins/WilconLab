@@ -156,7 +156,7 @@ export default function HomeComponent7() {
             </div>
           </div>
           <div className='min-h-[600px] w-full grid grid-cols-1 p-[10px] lg:grid lg:grid-cols-[70%,30%] lg:relative'>
-            <div className='min-h-[200px] w-full  bg-green-400 lg:relative'>
+            <div className='min-h-[200px] w-full  bg- lg:relative'>
                 <img src={appoint} height='100%' width='100%' alt="" />
 
             </div>
@@ -166,11 +166,11 @@ export default function HomeComponent7() {
                 </div>
                 <section className='p-[10px] box-border'>
                     <form action="">
-                        <input type="text" placeholder=' Your name' className='h-[50px] w-[100%] hover:outline-[green]' required/>
-                        <input type="email" placeholder='  Mail' className='h-[50px] w-[100%] mt-[20px] hover:outline-[green]' required/>
-                        <input type="text" placeholder='  Medical Research' className='h-[50px] w-[100%] mt-[20px] hover:outline-[green]' required/>
-                        <input type="date"  className='h-[50px] w-[100%] mt-[20px] hover:outline-[green]' required/>
-                        <textarea name="" id="" placeholder=' Type your message' className='mt-[20px] h-[140px] w-full hover:outline-[green]'></textarea>
+                        <input type="text" placeholder=' Your name' className='h-[50px] w-[100%] dark:bg-bodybg hover:outline-[green]' required/>
+                        <input type="email" placeholder='  Mail' className='h-[50px] w-[100%] dark:bg-bodybg mt-[20px] hover:outline-[green]' required/>
+                        <input type="text" placeholder='  Medical Research' className='h-[50px] w-[100%] dark:bg-bodybg mt-[20px] hover:outline-[green]' required/>
+                        <input type="date"  className='h-[50px] w-[100%] mt-[20px] hover:outline-[green] dark:bg-bodybg' required/>
+                        <textarea name="" id="" placeholder=' Type your message' className='mt-[20px] dark:bg-bodybg h-[140px] w-full hover:outline-[green]'></textarea>
                         <section className='min-h-[100px] md:flex items-center justify-between'>
                             <div>
                                 <Button
@@ -188,7 +188,7 @@ export default function HomeComponent7() {
                         </section>
 
                       
-                    </form>
+                    </form> 
                 </section>
             </div>
 
@@ -203,11 +203,11 @@ export default function HomeComponent7() {
                 </div>
                 <section className='p-[10px] box-border'>
                     <form action="">
-                        <input type="text" placeholder=' Your name' className='h-[50px] w-[100%] hover:outline-[green]' required/>
-                        <input type="email" placeholder='  Mail' className='h-[50px] w-[100%] mt-[20px] hover:outline-[green]' required/>
-                        <input type="text" placeholder='  Medical Research' className='h-[50px] w-[100%] mt-[20px] hover:outline-[green]' required/>
-                        <input type="date"  className='h-[50px] w-[100%] mt-[20px] hover:outline-[green]' required/>
-                        <textarea name="" id="" placeholder=' Type your message' className='mt-[20px] h-[140px] w-full hover:outline-[green]'></textarea>
+                        <input type="text" placeholder=' Your name' className='h-[50px] w-[100%]  dark:bg-bodybg hover:outline-[green]' required/>
+                        <input type="email" placeholder='  Mail' className='h-[50px] w-[100%] dark:bg-bodybg mt-[20px] hover:outline-[green]' required/>
+                        <input type="text" placeholder='  Medical Research' className='h-[50px] dark:bg-bodybg w-[100%] mt-[20px] hover:outline-[green]' required/>
+                        <input type="date"  className='h-[50px] w-[100%] mt-[20px] hover:outline-[green] dark:bg-bodybg' required/>
+                        <textarea name="" id="" placeholder=' Type your message' className='mt-[20px] h-[140px] dark:bg-bodybg w-full hover:outline-[green]'></textarea>
                         <section className='min-h-[100px] md:flex items-center justify-between'>
                             <div>
                                 <Button

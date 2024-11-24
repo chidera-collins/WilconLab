@@ -7,7 +7,7 @@ import TeamComponent5 from './TeamComponent5'
 
 function TeamComponent() {
   return (
-    <div className='mt-[110px]'>
+    <div className='mt-[110px] bg-white'>
       <TeamComponent1/>
       <TeamComponent2/>
       <TeamComponent3/>

@@ -32,7 +32,7 @@ function HeaderComponent() {
         
     }
   return (
-    <div className='min-h-[120px] w-full fixed top-0 z-50'>
+    <div className='max-h-[30px] w-full fixed top-0 z-50'>
         <div className='min-h-[100px] bg-[#b7d0d6]  flex items-center p-[10px] box-border lg:hidden '>
             <div className=' gap-1 flex items-center justify-start w-[60%]  '>
                 <h1  className='font-bold text-3xl text-textc '><BsLungs /></h1>
@@ -65,7 +65,7 @@ function HeaderComponent() {
 
 
         {/* for large screen  */}
-        <div className='min-h-[140px] bg-[#b7d0d6] hidden lg:grid grid-cols-[25%,75%] w-full overflow-x-hidden '>
+        <div className='min-h-[10px] bg-[#b7d0d6] hidden lg:grid grid-cols-[25%,75%] dark:text-black w-full overflow-x-hidden '>
             <div className=' gap-1 flex items-center justify-center'>           
                     <h1  className='font-bold text-3xl text-textc '><BsLungs /></h1>
                     <h1 className=' font-custom text-4xl font-bold text-boldtext'> WILCON LAB </h1>
@@ -78,7 +78,7 @@ function HeaderComponent() {
                     </div>
                     <div className='flex items-center'>
                         <h1 className='text-boldtext text-2xl font-bold'><IoTimeOutline /></h1>
-                        <h1 className='font-custom text-[17px] font-semibold'>MONDAY - FRIDAY 09:00AM-05:00PM</h1>
+                        <h1 className='font-custom text-[17px] font-semibold dark:text-black'>MONDAY - FRIDAY 09:00AM-05:00PM</h1>
                     </div>
                     <div className='flex items-center'>
                           <h1 className='font-custom text-[19px] font-semibold'>MONDAY - FRIDAY 09:00AM-05:00PM</h1>
@@ -123,7 +123,7 @@ function HeaderComponent() {
                                   
                                 <FaBasketShopping className='relative'/>
                                 {totalItems > 0 && (
-                                            <span className="absolute top-[80px] right-[230px] bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+                                            <span className="absolute top-[80px] right-[15%] bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
                                                 {totalItems}
                                             </span>
                                         )}
@@ -134,7 +134,7 @@ function HeaderComponent() {
 
 
                         </div>
-                        <div className='flex items-center justify-center bg-boldtext text-bodybg font-custom font-semibold text-2xl w-[90%]'>
+                        <div className='flex items-center justify-center bg-boldtext text-bodybg font-custom font-semibold text-[1.2rem] w-[90%]'>
                             <Link to={'/About'}><h1>BOOK APPOINTMENT</h1></Link>
                         </div>
                     </div>

@@ -27,7 +27,7 @@ function PricingComponent1() {
             </div>
             <div>
                 <h1 className=' relative  text-2xl font-custom font-extrabold tracking-[3px]'>Wilcon Lab : PRICING PLAN</h1>
-                <h1 className='absolute flex before:h-[3px] before:w-[150px] before:bg-bodybg right-[200px]'></h1>
+                <h1 className='absolute flex before:h-[3px] before:w-[150px] before:bg-bodybg right-[13%]  xl:right-[14%]'></h1>
             </div>
       </div>
     </div>

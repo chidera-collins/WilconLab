@@ -27,7 +27,7 @@ function TeamComponent1() {
             </div>
             <div>
                 <h1 className=' relative  text-2xl font-custom font-extrabold'>Wilcon Lab : TEAM DETAILS</h1>
-                <h1 className='absolute flex before:h-[3px] before:w-[120px] before:bg-bodybg  right-[220px]'></h1>
+                <h1 className='absolute flex before:h-[3px] before:w-[120px] before:bg-bodybg  right-[14.5%]'></h1>
             </div>
             
 

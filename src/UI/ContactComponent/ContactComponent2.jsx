@@ -29,7 +29,7 @@ function ContactComponent2() {
                         <HiOutlineLocationMarker className='text-4xl font-extrabold font-custom' />
                         <h1 className='text-4xl font-extrabold font-custom text-boldtext'>Address Line</h1>
                     </div>
-                    <div className='text-center font-custom text-2xl font-light'>
+                    <div className='text-center font-custom text-2xl font-light  dark:text-black'>
                        <h1> Bowen St,New York,Ny</h1>
                        <h1>103301, USA</h1>
                     </div>
@@ -40,7 +40,7 @@ function ContactComponent2() {
                         <FcCellPhone className='text-4xl font-extrabold font-custom' />
                         <h1 className='text-4xl font-extrabold font-custom text-boldtext'>Phone Number</h1>
                     </div>
-                    <div className='text-center font-custom text-2xl font-light'>
+                    <div className='text-center font-custom text-2xl font-light dark:text-black'>
                         <h1>+234 90 4488 4589</h1>
                         <h1>+234 90 4488 4589</h1>
                     </div>
@@ -50,22 +50,22 @@ function ContactComponent2() {
                         <FcClock className='text-4xl font-extrabold font-custom' />
                         <h1 className='text-4xl font-extrabold font-custom text-boldtext'>Opening Hours</h1>
                     </div>
-                    <div className='text-center font-custom text-2xl font-light '>
+                    <div className='text-center font-custom text-2xl font-light dark:text-black '>
                         <h1>Monday - Friday</h1>
                         <h1>09:00 AM - 05:00 PM</h1>
                     </div>
                 </div>
             </div>
-            <div className='p-[10px] md:p-0'>
+            <div className='p-[10px] dark:text-black md:p-0'>
                 <form action="">
                     <h1  className='font-custom font-bold text-boldtext  text-[1.2rem]  mt-4'>Send us a Message:</h1>
-                    <input type="text" placeholder='  Enter your Name' className='h-[40px] w-full md:w-[90%] lg:w-[40%] mt-10 active:outline-blue-700 hover:outline-blue-700'required />
-                    <input type="text" placeholder='  Enter your number ' className='h-[40px] w-full md:w-[90%] mt-8 lg:w-[40%] lg:ml-10 md:mt-8 lg:mt-10 active:outline-blue-700 hover:outline-blue-700'required />
-                    <input type="number" placeholder='  Enter your number ' className='h-[40px] w-full md:w-[90%] mt-8 lg:w-[40%] md:mt-8 lg:mt-10 active:outline-blue-700 hover:outline-blue-700' required />
-                    <input type="text" placeholder='  Enter your website ' className='h-[40px] w-full md:w-[90%] mt-8 lg:w-[40%] lg:ml-10 md:mt-8 lg:mt-10 active:outline-blue-700 hover:outline-blue-700' />
-                    <textarea name="" id="" className='w-full md:w-[90%] lg:w-[84%] mt-10 h-[120px] active:outline-blue-700 hover:outline-blue-700'></textarea>
+                    <input type="text" placeholder='  Enter your Name' className='h-[40px] dark:bg-white w-full md:w-[90%] lg:w-[40%] mt-10 active:outline-blue-700 hover:outline-blue-700'required />
+                    <input type="text" placeholder='  Enter your number ' className='h-[40px] dark:bg-white w-full md:w-[90%] mt-8 lg:w-[40%] lg:ml-10 md:mt-8 lg:mt-10 active:outline-blue-700 hover:outline-blue-700'required />
+                    <input type="number" placeholder='  Enter your number ' className='h-[40px] dark:bg-white w-full md:w-[90%] mt-8 lg:w-[40%] md:mt-8 lg:mt-10 active:outline-blue-700 hover:outline-blue-700' required />
+                    <input type="text" placeholder='  Enter your website ' className='h-[40px] w-full dark:bg-white md:w-[90%] mt-8 lg:w-[40%] lg:ml-10 md:mt-8 lg:mt-10 active:outline-blue-700 hover:outline-blue-700' />
+                    <textarea name="" id="" className='w-full md:w-[90%]  dark:bg-white lg:w-[84%] mt-10 h-[120px] active:outline-blue-700 hover:outline-blue-700'></textarea>
                     <Button
-                     className='btn btn-neutral bg-boldtext text-bodybg hover:bg-boldtext hover:bg-opacity-75 mt-8'
+                     className='btn  bg-textc text-bodybg hover:bg-textc hover:bg-opacity-75 mt-8'
                      type ='submit'
                      label = ' SEND MESSAGE'
                     

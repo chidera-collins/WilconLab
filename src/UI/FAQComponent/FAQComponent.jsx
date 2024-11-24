@@ -5,7 +5,7 @@ import FAQComponent3 from './FAQComponent3'
 
 function FAQComponent() {
   return (
-    <div className='mt-[110px]'>
+    <div className='mt-[110px] bg-white'>
       <FAQComponent1/>
       <FAQComponent2/>
       <FAQComponent3/>

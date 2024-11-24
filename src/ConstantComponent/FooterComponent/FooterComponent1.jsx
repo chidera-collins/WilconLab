@@ -76,7 +76,7 @@ function FooterComponent1() {
        <div className="bg-boldtext text-center text-bodybg py-4">
         <div>
         <p className="font-custom text-[1rem] md:text-[1.2rem]">
-          &copy; {new Date().getFullYear()} Your Company Name. All Rights Reserved.
+          &copy; {new Date().getFullYear()} WILCON LAB. All Rights Reserved.
         </p>
         </div>
         <div>

@@ -27,7 +27,7 @@ function ShopComponent1() {
             </div>
             <div>
                 <h1 className=' relative  text-2xl font-custom font-extrabold'>Wilcon Lab : SHOP</h1>
-                <h1 className='absolute flex before:h-[3px] before:w-[50px] before:bg-bodybg  right-[20%]'></h1>
+                <h1 className='absolute flex before:h-[3px] before:w-[50px] before:bg-bodybg  right-[19.3%] xl:right-[20%]'></h1>
             </div>
             
 

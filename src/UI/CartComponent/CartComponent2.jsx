@@ -12,9 +12,9 @@ function CartComponent2() {
   return (
     <div className=' p-[10px] lg:p-[20px]'>
     {cart.length === 0 ? (
-        <p className='font-custom font-bold text-3xl'>Your cart is empty</p>
+        <p className='font-custom font-bold text-3xl dark:text-black'>Your cart is empty</p>
     ) : (
-        <table className="cart-table border-[1px] p-[10px]  w-full border-black"  >
+        <table className="cart-table dark:text-black border-[1px] p-[10px]  w-full border-black"  >
             <thead>
                 <tr>
                     <th className='border-black border-[1px]'>Image</th>

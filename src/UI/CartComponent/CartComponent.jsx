@@ -4,7 +4,7 @@ import CartComponent2 from './CartComponent2'
 
 function CartComponent() {
   return (
-    <div className='mt-[110px]'>
+    <div className='mt-[110px]  bg-white'>
         <CartComponent1/>
         <CartComponent2/>
 

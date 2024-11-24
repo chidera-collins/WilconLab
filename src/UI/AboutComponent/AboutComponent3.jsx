@@ -80,7 +80,7 @@ function AboutComponent3() {
                   <h1 className='flex items-center gap-1 text-[20px] text-boldtext font-semibold hover:text-teal-500 transition ease-in-out font-custom cursor-pointer'>Read our Mission & Vision <FaArrowRight   className='hover:translate-x-1'/> </h1> 
                 </div>
                 <div>
-                 <p className='text-start font-custom font-medium'>
+                 <p className='text-start dark:text-black font-custom font-medium'>
                     Exerci tation ullamcorper suscipit lobortis nisl aliquip ex ea commodo claritatem insitamconse quat.Exerci tation ullamcorper suscipit loborti excommodo habent claritatem insitamconse quat.Exerci tationlobortis nisl aliquip ex ea commodo habent claritatem insitamconse qua
                  </p>
                 </div>
