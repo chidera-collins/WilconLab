@@ -9,12 +9,12 @@ import Button from '../../ReusableComponent/Button'
 
 function HomeComponent5() {
   return (
-    <div className='min-h-[1200px]  mt-[50px] relative p-[30px] hidden lg:block  '>
-        <div className='min-h-[300px] bg-blue-700 flex flex-col items-center relative '>
+    <div className='min-h-[100px]  mt-[50px] relative p-[30px] hidden lg:block  '>
+        <div className='min-h-[200px] bg-blue-700 flex flex-col items-center  relative '>
             <h1 className='before:h-[3px] before:w-[20px] before:bg-bodybg  after:h-[3px] after:w-[20px] after:bg-bodybg flex relative items-center text-[15px] font-light  text-bodybg font-custom leading-10'>WORK GALLERY</h1>
             <h1 className='text-4xl text-bodybg font-custom font-bold'>Wilcon Gallery</h1>
         </div>
-        <div className='min-h-[200px] grid grid-cols-1 lg:grid-cols-3 absolute w-[90%] left-5 md:left-10 lg:left-20  p-[10px] box-border top-[200px] gap-10 '>
+        <div className='min-h-[200px] grid grid-cols-1 lg:grid-cols-3 w-[90%] left-5 md:left-10 translate-x-20 p-[10px] box-border mt-[-60px] gap-10 '>
             <div className='first min-h-10 w-full relative'>
                 <img src={first} width='100%' height='100%' alt="" />
                 <div className='galleryp1 absolute bottom-0 left-0 right-0 '>
@@ -65,7 +65,7 @@ function HomeComponent5() {
          
 
         </div>
-        <div className='min-h-[10px] w-full mt-[1700px] lg:mt-[880px] justify-center grid'>
+        <div className='min-h-[10px] w-full  justify-center grid'>
 
             <Link to={'/Contact'}>
                 <Button

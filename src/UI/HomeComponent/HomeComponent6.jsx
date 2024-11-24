@@ -66,7 +66,7 @@ function HomeComponent6() {
     
   return (
     <div>
-        <div className='min-h-[600px] md:min-h-[500px] lg:min-h-[300px] mt-[50px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-around gap-5 p-[10px] box-border' ref={sectionRef}>
+        <div className='min-h-[600px] md:min-h-[500px]  lg:min-h-[300px] mt-[50px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-around gap-5 p-[10px] box-border' ref={sectionRef}>
             <motion.div 
               initial={{ opacity:0, y:30 }}
               whileInView={{ opacity: 1, y:0 }}
