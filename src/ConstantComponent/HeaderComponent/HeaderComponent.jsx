@@ -92,7 +92,7 @@ function HeaderComponent() {
                             <li className='nav-item john-bro cursor-pointer hover:border-b-[2px] hover:border-boldtext'>
                                PAGES +
                             </li>
-                            <div className=" john opacity-0 absolute top-[150px] left-[35%] " style={{transition:'1s'}}>
+                            <div className=" john opacity-0 absolute top-[150px] left-[35%] xl:left-[33.3%] " style={{transition:'1s'}}>
                                    <ul className='flex flex-col text-bodybg  font-custom font-extrabold text-[1.4rem]'>
                                         <li className='hover:text-textc'><Link to={'/Service'}>Services</Link></li>
                                         <li className='hover:text-textc'><Link to={'/Pricing'}>Pricing Plan</Link></li>

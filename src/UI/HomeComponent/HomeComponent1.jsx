@@ -54,8 +54,8 @@ function HomeComponent1() {
                     <h1 className='font-custom text-textc font-semibold text-[20px]'>Our Passion is to Give you Better Service</h1>
                     <p className='font-custom text-[19px] font-medium text-start'>Your full service lab for clinical trials.Our mission is to ensure the generation of accurate and precise findings</p>
                 </div>
-                <div className='md:flex items-center gap-2'>
-                    <div className='min-h-[54px] w-[40%] md:w-[20%] bg-boldtext rounded-xl flex justify-center items-center text-bodybg font-custom text-[19px] cursor-pointer'>
+                <div className='md:flex lg:flex items-center gap-2'>
+                    <div className='min-h-[50px] w-[40%] md:w-[20%] bg-boldtext rounded-xl flex justify-center items-center text-bodybg font-custom text-[19px] cursor-pointer'>
                       <Link to={'/Contact'}>APPOINTMENT</Link>
 
                     </div>
@@ -84,11 +84,11 @@ function HomeComponent1() {
                     transition={{delay:1.5, duration:4}}
                     className='md:flex items-center gap-2'
                 >
-                    <div className='min-h-[54px] w-[40%] md:w-[20%] bg-boldtext rounded-xl flex justify-center items-center text-bodybg font-custom text-[19px] cursor-pointer'>
+                    <div className='min-h-[50px] w-[40%] md:w-[20%] bg-boldtext rounded-xl flex justify-center items-center text-bodybg font-custom text-[19px] cursor-pointer'>
                       <Link to={'/Contact'}>APPOINTMENT</Link>
 
                     </div>
-                    <div className='min-h-[50px] w-[35%] md:w-[20%] bg-textc rounded-xl mt-[10px] flex justify-center items-center text-bodybg font-custom text-[19px] cursor-pointer'>
+                    <div className='min-h-[50px] w-[35%] md:w-[20%] bg-textc rounded-xl  flex justify-center items-center text-bodybg font-custom text-[19px] cursor-pointer'>
                       <Link to={'/About'}>ABOUT US</Link>
 
                     </div>
