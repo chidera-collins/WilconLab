@@ -41,7 +41,7 @@ function HeaderComponent() {
             <div className='flex justify-end gap-4 w-[40%] p-[20px] box-border items-center'>
                 <div className='cursor-pointer text-[1.3rem]'>
                      <Link to={'/cart'}>                                 
-                         <FaBasketShopping />  
+                         <FaBasketShopping  className='dark:text-black'/>  
                          {totalItems > 0 && (
                             <span className="absolute top-[30px] right-[80px] bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
                                    {totalItems}
@@ -53,7 +53,7 @@ function HeaderComponent() {
                 <Button
                         height='90px'
                         width ='4000px'
-                        className='bg-textc text-2xl font-bold p-[10px]'
+                        className='bg-textc text-2xl font-bold p-[10px] dark:text-black'
                         label = 'Ξ'
                         onClick = {sidenav}
                     />
@@ -166,12 +166,12 @@ function HeaderComponent() {
                     />
             </div>
                         {/* THIS PART OF THE SIDENAV IS HIDDEN FOR LARGE SCREEN  */}
-            <section className='p-[10px] lg:hidden '>
+            <section className='p-[10px] lg:hidden  dark:text-white '>
                 <div className='border-b-[1px] border-b-white'>
-                  <h1 className='font-custom font-semibold text-[19px] lg:text-[24px]'onClick={sidenav} > <Link to={'/'}>HOME</Link> </h1>
+                  <h1 className='font-custom font-semibold text-[19px] lg:text-[24px] hover:text-boldtext'onClick={sidenav} > <Link to={'/'}>HOME</Link> </h1>
                 </div>
                 <div className='flex items-center justify-between border-b-[1px] border-b-white min-h-[20px]'>
-                    <h1 className='font-custom font-semibold text-[19px] lg:text-[24px] '  onClick={sidenav}><Link to={'/About'}>ABOUT</Link></h1>
+                    <h1 className='font-custom font-semibold text-[19px] lg:text-[24px] hover:text-boldtext'  onClick={sidenav}><Link to={'/About'}>ABOUT</Link></h1>
                     <h1 className='font-custom text-[25px] font-semibold'></h1>
                 </div>
                 <div className="group border-b-[1px] border-b-white">
@@ -204,13 +204,13 @@ function HeaderComponent() {
                     </ul>
                 </div>
                 <div className='flex items-center justify-between border-b-[1px] border-b-white'>
-                    <h1 className='font-custom font-semibold text-[19px] lg:text-[24px] '  onClick={sidenav}><Link to={'/Research'}>RESEARCH</Link></h1>
+                    <h1 className='font-custom font-semibold text-[19px] lg:text-[24px] hover:text-boldtext '  onClick={sidenav}><Link to={'/Research'}>RESEARCH</Link></h1>
                 </div>
                 <div className='flex items-center justify-between border-b-[1px] border-b-white'>
-                    <h1 className='font-custom font-semibold text-[19px] lg:text-[24px] '  onClick={sidenav}><Link to={'/Team'}>TEAM</Link></h1>
+                    <h1 className='font-custom font-semibold text-[19px] lg:text-[24px] hover:text-boldtext '  onClick={sidenav}><Link to={'/Team'}>TEAM</Link></h1>
                 </div>
                 <div className='flex items-center justify-between border-b-[1px] border-b-white'>
-                    <h1 className='font-custom font-semibold text-[19px] lg:text-[24px] '  onClick={sidenav}><Link to={'/Contact'}>CONTACT</Link></h1>
+                    <h1 className='font-custom font-semibold text-[19px] lg:text-[24px] hover:text-boldtext '  onClick={sidenav}><Link to={'/Contact'}>CONTACT</Link></h1>
                 </div>
             </section>
 
@@ -225,7 +225,7 @@ function HeaderComponent() {
          
 
             <div className='mt-[20px] p-[10px] lg:p-[20px]'>
-                <h1 className='lg:text-2xl font-custom'>CONTACT US</h1>
+                <h1 className='lg:text-2xl font-custom dark:text-white'>CONTACT US</h1>
                 <h1 className='hover:text-[red] text-bodybg'>⭐<a href="#" className='font-light font-custom text-[17px] md:text-[20px] lg:text-3xl'> Ta-134/A,Gulshan Badda Link</a></h1>
                 <h1 className='hover:text-[red] text-bodybg'>⭐<a href="#" className='font-light font-custom text-[17px] md:text-[20px] lg:text-3xl'> +234 90 8788 8999</a></h1>
                 <h1 className='hover:text-[red] text-bodybg'>⭐<a href="#"className='font-light font-custom text-[17px] md:text-[20px] lg:text-3xl '> Wilconlab@gmail.com</a></h1>
