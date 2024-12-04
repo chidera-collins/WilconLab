@@ -55,7 +55,6 @@ html {
   transform: rotate(-60deg);
 }
 .galleryp1{
-  /* width: 320px; */
   height: 0px;
   background-color: aqua;
   transition: 1s;
